@@ -45,3 +45,13 @@ summary.lm(simp2)
 ```
 
 The adjusted R-squared is 0.5321 which is smaller than the model using the "neck."
+
+```{r}
+simp3 <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(simp3)
+summary.lm(simp3)
+```
+The adjusted R-squared is 0.7423 which is smaller than the model using the "neck."
+
+
