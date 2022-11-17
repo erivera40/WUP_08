@@ -37,3 +37,11 @@ predict(simp,new,se.fit=TRUE)
 ```
 ## Surely there is another variable that can better predict LENGTH than NECK. Find one and compare its performance to that of neck by it value of Adjusted-Rsquared (bigger is better).
 
+```{r}
+simp2 <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~NECK,data=bears)
+abline(simp2)
+summary.lm(simp2)
+```
+
+The adjusted R-squared is 0.5321 which is smaller than the model using the "neck."
