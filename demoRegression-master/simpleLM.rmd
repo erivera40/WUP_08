@@ -80,3 +80,12 @@ summary.lm(simp6)
 ```
 The adjusted R-squared "chest" variable is -0.008373 which is too small to consider. 
 
+
+```{r}
+simp7 <- lm(LENGTH~as.numeric(MONTH),data=bears)
+plot(LENGTH~as.numeric(MONTH),data=bears)
+abline(simp7)
+summary.lm(simp7)
+```
+The adjusted R-squared "chest" variable is -0.01153 which is too small to consider as well.
+
