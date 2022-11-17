@@ -60,16 +60,16 @@ plot(LENGTH~CHEST,data=bears)
 abline(simp4)
 summary.lm(simp4)
 ```
-The adjusted R-squared "chest" variable is 0.7869 which is larger than the model using the "neck." As of now, this is the largest "chest" variable larger than the model using the "neck."
+The adjusted R-squared "CHEST" variable is 0.7869 which is larger than the model using the "neck." As of now, this is the largest "chest" variable larger than the model using the "neck."
 
 
 ```{r}
 simp5 <- lm(LENGTH~HEADLEN,data=bears)
-plot(LENGTH~NECK,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
 abline(simp5)
 summary.lm(simp5)
 ```
-The adjusted R-squared "chest" variable is 0.8434 which is larger than the model using the "neck." As of now, this is the largest "chest" variable larger than the model using the "neck."
+The adjusted R-squared "HEADLEN" variable is 0.8434 which is larger than the model using the "neck." As of now, this is the largest "HEADLEN" variable larger than the model using the "neck."
 
 
 ```{r}
@@ -78,7 +78,7 @@ plot(LENGTH~as.numeric(SEX),data=bears)
 abline(simp6)
 summary.lm(simp6)
 ```
-The adjusted R-squared "chest" variable is -0.008373 which is too small to consider. 
+The adjusted R-squared "SEX" variable is -0.008373 which is too small to consider. 
 
 
 ```{r}
@@ -87,7 +87,7 @@ plot(LENGTH~as.numeric(MONTH),data=bears)
 abline(simp7)
 summary.lm(simp7)
 ```
-The adjusted R-squared "chest" variable is -0.01153 which is too small to consider as well.
+The adjusted R-squared "MONTH" variable is -0.01153 which is too small to consider as well.
 
 ```{r}
 simp8 <- lm(LENGTH~as.numeric(AGE),data=bears)
@@ -95,6 +95,6 @@ plot(LENGTH~as.numeric(AGE),data=bears)
 abline(simp8)
 summary.lm(simp8)
 ```
-The adjusted R-squared "chest" variable is 0.5073 which is larger than the model using the "neck." Although it is larger than the model, there already exists a value that is larger than 0.5073.
+The adjusted R-squared "AGE" variable is 0.5073 which is larger than the model using the "neck." Although it is larger than the model, there already exists a value that is larger than 0.5073.
 
 
