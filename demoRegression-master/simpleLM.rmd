@@ -71,3 +71,12 @@ summary.lm(simp5)
 ```
 The adjusted R-squared "chest" variable is 0.8434 which is larger than the model using the "neck." As of now, this is the largest "chest" variable larger than the model using the "neck."
 
+
+```{r}
+simp6 <- lm(LENGTH~as.numeric(SEX),data=bears)
+plot(LENGTH~as.numeric(SEX),data=bears)
+abline(simp6)
+summary.lm(simp6)
+```
+The adjusted R-squared "chest" variable is -0.008373 which is too small to consider. 
+
