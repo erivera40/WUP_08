@@ -1,7 +1,7 @@
 ---
 title: "simpleRegress"
 author: "Elizabeth Rivera"
-date: "Fall- 16 NOV 2022"
+date: "Fall- NOV 16, 2022"
 output: html_document
 ---
 
