@@ -89,3 +89,12 @@ summary.lm(simp7)
 ```
 The adjusted R-squared "chest" variable is -0.01153 which is too small to consider as well.
 
+```{r}
+simp8 <- lm(LENGTH~as.numeric(AGE),data=bears)
+plot(LENGTH~as.numeric(AGE),data=bears)
+abline(simp8)
+summary.lm(simp8)
+```
+The adjusted R-squared "chest" variable is 0.5073 which is larger than the model using the "neck." Although it is larger than the model, there already exists a value that is larger than 0.5073.
+
+
